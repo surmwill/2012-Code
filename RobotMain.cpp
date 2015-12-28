@@ -34,9 +34,9 @@ int AbsI(int); // Returns the absolute value of an integer
 class SimpleTracker : public SimpleRobot
 {
     // Global variables accessible to entire program
-	Joystick *leftStick; // Left driver joystick
-	Joystick *rightStick; // Right driver joystick
-	Joystick *speedStick; // Co-driver joystick
+    Joystick *leftStick; // Left driver joystick
+    Joystick *rightStick; // Right driver joystick
+    Joystick *speedStick; // Co-driver joystick
     Victor *frontMotor; // Front drive motor
     Victor *rearMotor; // Rear drive motor
     Jaguar *frontSteer; // Front steering motor
@@ -65,7 +65,7 @@ class SimpleTracker : public SimpleRobot
     public:
 	SimpleTracker(void)
 	{	
-		// Assign object pointers here.      
+	// Assign object pointers here.      
         frontMotor = new Victor(FRONTMOTORPORT); // Driving Motors
         rearMotor = new Victor(REARMOTORPORT);
         
